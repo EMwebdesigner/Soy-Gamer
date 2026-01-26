@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Pedido</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Mi Pedido</h1>
+  </header>
+
+  <main class="container">
+
+    <table class="tabla-pedido">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="tablaPedido">
+        <!-- filas dinámicas -->
+      </tbody>
+    </table>
+
+    <div class="total-container">
+      <h2>Total: <span id="totalPedido">$0</span></h2>
+    </div>
+
+    <div class="acciones">
+      <button id="btnEnviarPedido">Enviar</button>
+    </div>
+
+  </main>
+
+  <script src="./js/carrito.js"></script>
+  <script src="./js/pedidos.js"></script>
+</body>
+</html>
