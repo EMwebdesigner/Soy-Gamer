@@ -38,6 +38,9 @@ function agregarAlPedido(idProducto) {
 
   guardarPedido(pedido);
   actualizarContadorPedido();
+
+  // 🔁 actualizar catálogo
+    renderTodosLosCatalogos();
 }
 
 
