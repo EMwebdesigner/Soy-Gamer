@@ -13,7 +13,7 @@ function renderProductos(productos, contenedorId) {
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
       <div class="card-body">
         <h3>${producto.nombre}</h3>
         <p class="precio">$${producto.precio.toLocaleString()}</p>
