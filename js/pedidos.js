@@ -102,7 +102,7 @@ function enviarPedidoWhatsApp() {
     return;
   }
 
-  let mensaje = "🛍️ *Nuevo pedido*\n\n";
+  let mensaje = "🎮 *Nuevo pedido*\n\n";
   let total = 0;
 
   pedido.forEach(producto => {
@@ -114,7 +114,7 @@ function enviarPedidoWhatsApp() {
     mensaje += `  Subtotal: $${subtotal.toLocaleString()}\n\n`;
   });
 
-  mensaje += `💰 *Total: $${total.toLocaleString()}*`;
+  mensaje += `💳 *Total: $${total.toLocaleString()}*`;
 
   const telefono = "5491138012748"; // ← cambiá por el número real
   const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
